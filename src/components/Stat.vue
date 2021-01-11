@@ -62,6 +62,9 @@ export default {
       if (this.$props.stat_vertical) {
         classes += ' element--flex-center';
       }
+      else {
+        classes += ' element--flex-left';
+      }
       return classes;
     }
   }
@@ -69,5 +72,5 @@ export default {
 </script>
 
 <style lang="scss">
-    @import '../../node_modules/@uiowa/uids/src/components/stat/stat.scss';
+@import '../../node_modules/@uiowa/uids/src/components/stat/stat.scss';
 </style>

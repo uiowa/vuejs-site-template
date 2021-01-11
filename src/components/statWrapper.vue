@@ -21,6 +21,17 @@ export default {
 
     props: {
       stats: {
+        /*
+          Array of items with the following structure:
+          {
+            headline: String,
+            headline_prefix: String,
+            headline_suffix: String,
+            stat_description: String,
+            stat_content: String,
+            stat_vertical: Boolean,
+          },
+        */
         type: Array
       },
     },
@@ -29,7 +40,3 @@ export default {
     }
 }
 </script>
-
-<style scoped>
-
-</style>

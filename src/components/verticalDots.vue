@@ -25,7 +25,7 @@ export default {
         {
           section_title: String,
           section_id: 'String
-        }
+        },
       */
       type: Array,
     },
