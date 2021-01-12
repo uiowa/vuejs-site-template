@@ -25,8 +25,8 @@
   banner_title_classes='headline headline--uppercase'
 />
 
-<div data-uids-cta="data-uids-cta" role="region" class="cta-row__wrapper">
-  <div class="cta-row__container">
+<div role="region" class="menu-group__wrapper">
+  <div class="menu-group__container">
     <menuGroup
       :items="menu_items"
     />
@@ -237,10 +237,10 @@ $imgpath: '../node_modules/@uiowa/uids/src/assets/images';
 }
 
 // Override and condense for smaller devices.
-.cta-row__wrapper {
+.menu-group__wrapper {
   transition: padding 0.5s ease;
   padding: 0.3rem 0;
-  .cta-row__container .menu a {
+  .menu-group__container .menu a {
     transition: margin 0.5s ease;
     margin: 0px .5rem;
     padding-bottom: 0.5rem;
@@ -250,9 +250,9 @@ $imgpath: '../node_modules/@uiowa/uids/src/assets/images';
   }
 }
 @media (min-height: 1000px) {
-  .cta-row__wrapper {
+  .menu-group__wrapper {
     padding: 1.875rem 0;
-    .cta-row__container .menu a {
+    .menu-group__container .menu a {
       margin: 0px 1.05rem;
     }
     .bttn--outline {

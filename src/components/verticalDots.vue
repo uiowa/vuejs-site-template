@@ -3,8 +3,8 @@
     <ul>
       <template v-for="(section, index) in sections" :key="index">
         <li>
-          <a class="v-dot-link" :href="'#'+section.section_id" :aria-labelledby="'v-dot-nav-section-'+index" :data-section="section.section_id">
-            <span :id="'v-dot-nav-section-'+index">{{section.section_title}}</span>
+          <a class="vertical-dots--link" :href="'#'+section.section_id" :aria-labelledby="'vertical-dots--nav-section-'+index" :data-section="section.section_id">
+            <span :id="'vertical-dots--nav-section-'+index">{{section.section_title}}</span>
             <i v-if="index===0" class="fas fa-arrow-up"></i>
           </a>
         </li>
@@ -51,7 +51,7 @@ export default {
 
       // If this is the first scroll, get the vertical dots nav components.
       if (this.firstScroll) {
-        this.mainNavLinks = document.querySelectorAll("nav ul li a.v-dot-link");
+        this.mainNavLinks = document.querySelectorAll("nav ul li a.vertical-dots--link");
         this.firstScroll = false;
       }
 
