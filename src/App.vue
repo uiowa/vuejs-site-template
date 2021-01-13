@@ -65,7 +65,7 @@
   image= '/images/viewbook/sections/0315.jpg'
   headline= 'We Work <span>Together</span>'
   button_text= 'View Academic Opportunities'
-  button_link= 'https://admissions.uiowa.edu/academics/academics'
+  button_link= ''
   grid_panel_type= 'grid-panel grid-panel--asymmetrical'
   grid_panel_first_column= 'grid-panel__column-image-left'
   grid_panel_second_column= 'grid-panel__column-content-right grid-panel__content'
@@ -186,26 +186,26 @@ export default {
           section_id: 'academic-opportunities'
         },
       ],
-      contact_info: '<p>Iowa City, Iowa 52242<br><a href="tel:319-335-3847"><i class="fas fa-phone"></i> 319-335-3847</a><br /></p>',
+      contact_info: '<p>Iowa City, Iowa 52242<br><a href=""><i class="fas fa-phone"></i> 123-456-7890</a><br /></p>',
       social_media_links: [
         {
           text: 'Facebook',
-          url: 'http://www.facebook.com/admissions.office',
+          url: '',
           icon_class: 'fab fa-facebook-square'
         },
         {
           text: 'Instagram',
-          url: 'http://instagram.com/iowaadmissions',
+          url: '',
           icon_class: 'fab fa-instagram'
         },
         {
           text:  'Twitter',
-          url: 'https://twitter.com/iowaadmissions',
+          url: '',
           icon_class: 'fab fa-twitter-square'
         },
         {
           text: 'Youtube',
-          url: 'http://www.youtube.com/uiowaadmissions',
+          url: '',
           icon_class: 'fab fa-youtube'
         }
       ]
