@@ -30,7 +30,7 @@ python3 -m  http.server 8000
 The command will output the server URL to visit in your browser, ex. http://localhost:8000.
 
 
-### Creating a PR
+### Creating a PR 
 1. Once your feature branch has been created, you will need to run the following command: `git push origin feature_branch`.
 2. This will generate a url to use, ex. https://github.com/uiowa/vuejs-site-template/pull/new/feature_branch. 
 3. Set the upstream branch with `git push --set-upstream origin feature_branch`.
