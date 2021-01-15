@@ -2,7 +2,6 @@
 
 const config = {
   esbuildTarget: 'es2015',
-  base: '',
   // plugins: [
   //   babel({
   //     babelHelpers: 'bundled',
