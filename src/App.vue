@@ -94,7 +94,6 @@ import IowaBar from './components/IowaBar.vue';
 import GridPanel from './components/GridPanel.vue';
 import Headline from './components/Headline.vue';
 import verticalDots from './components/verticalDots.vue';
-import verticalDotsLandmark from './components/verticalDotsLandmark.vue';
 import linkButton from './components/linkButton.vue';
 import Aerial from './components/Aerial.vue';
 import menuGroup from './components/menuGroup.vue';
@@ -112,7 +111,6 @@ export default {
     IowaBar,
     Headline,
     verticalDots,
-    verticalDotsLandmark,
     GridPanel,
     linkButton,
     Aerial,
