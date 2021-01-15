@@ -31,8 +31,10 @@ The command will output the server URL to visit in your browser, ex. http://loca
 
 ### Specifying the base URL
 1. Determine the base path of your site. If the site lives in a subdirectory (e.g. uiowa.github.io/vuejs-site-template), then the base path of the site will be `/vuejs-site-template`. If the application isn’t served from a subdirectory, then the base path is `/`
-2. In the following line change `—base=/vuejs-site-template/` to `—base-=BASE_PATH/` where BASE_PATH is replaced with the path you determined in the previous step: https://github.com/uiowa/vuejs-site-template/blob/ad37ed9dc98658383ab26a4bd02dcdec1a518c97/.github/workflows/gh-pages.yml#L75  
-3. In the following line change `—base=/vuejs-site-template/latest/` to `—base-=BASE_PATH/latest/` where BASE_PATH is replaced with the path you determined in the previous step: https://github.com/uiowa/vuejs-site-template/blob/ad37ed9dc98658383ab26a4bd02dcdec1a518c97/.github/workflows/gh-pages.yml#L84 
+2. In the following line change `—base=/vuejs-site-template/` to `—base-=BASE_PATH/` where BASE_PATH is replaced with the path you determined in the previous step:  
+https://github.com/uiowa/vuejs-site-template/blob/ad37ed9dc98658383ab26a4bd02dcdec1a518c97/.github/workflows/gh-pages.yml#L75  
+3. In the following line change `—base=/vuejs-site-template/latest/` to `—base-=BASE_PATH/latest/` where BASE_PATH is replaced with the path you determined in the previous step:  
+https://github.com/uiowa/vuejs-site-template/blob/ad37ed9dc98658383ab26a4bd02dcdec1a518c97/.github/workflows/gh-pages.yml#L84 
 
 ### Creating a PR
 1. Once your feature branch has been created, you will need to run the following command: `git push origin feature_branch`.
