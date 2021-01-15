@@ -30,14 +30,11 @@ python3 -m  http.server 8000
 The command will output the server URL to visit in your browser, ex. http://localhost:8000.
 
 ### Specifying the base URL
-When creating a new site using this template, you will need to specify a base URL in the `.github/workflows/gh-pages.yml` file. To do this correctly;
-1. Discern whether your site is hosted in a subdirectory. For example, `https://uiowa.github.io` is not a subdirectory, where `https://uiowa.github.io/vuejs-site-template/` is.
-2. If it is a subdirectory, go to the `.github/workflows/gh-pages.yml` file and do the following;
-    1. Find the `Main branch preparations` build step and change the `yarn build` command to `yarn build --base=/YOUR/FULL/SUBDIRECTORY/PATH/`.
-    2. Find the `Develop branch preparations` build step and change the `yarn build` command to `yarn build --base=/YOUR/FULL/SUBDIRECTORY/PATH/latest/`.
-3. If it is not a subdirectory, go to the `.github/workflows/gh-pages.yml` file and do the following;
-    1. Find the `Main branch preparations` build step and change the `yarn build` command to `yarn build --base=/`.
-    2. Find the `Develop branch preparations` build step and change the `yarn build` command to `yarn build --base=/latest/`. 
+1. Determine the base path of your site. If the site lives in a subdirectory (e.g. uiowa.github.io/vuejs-site-template), then the base path of the site will be `/vuejs-site-template`. If the application isn’t served from a subdirectory, then the base path is `/`
+2. In the following line change `—base=/vuejs-site-template/` to `—base-=BASE_PATH/` where BASE_PATH is replaced with the path you determined in the previous step:  
+https://github.com/uiowa/vuejs-site-template/blob/ad37ed9dc98658383ab26a4bd02dcdec1a518c97/.github/workflows/gh-pages.yml#L75  
+3. In the following line change `—base=/vuejs-site-template/latest/` to `—base-=BASE_PATH/latest/` where BASE_PATH is replaced with the path you determined in the previous step:  
+https://github.com/uiowa/vuejs-site-template/blob/ad37ed9dc98658383ab26a4bd02dcdec1a518c97/.github/workflows/gh-pages.yml#L84 
 
 ### Creating a PR
 1. Once your feature branch has been created, you will need to run the following command: `git push origin feature_branch`.
