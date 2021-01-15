@@ -13,7 +13,7 @@
 </div>
 
 <banner
-  image="/images/widescreen__2592_x_1458/pano.jpg"
+  image="images/widescreen__2592_x_1458/pano.jpg"
   banner_size="large"
   banner_vertical_alignment="vertical-center"
   banner_horizontal_alignment="horizontal-center"
@@ -62,7 +62,7 @@
 </div>
 <grid-panel
   link_url= 'https://admissions.uiowa.edu/academics/academics'
-  image= '/images/viewbook/sections/0315.jpg'
+  image= 'images/viewbook/sections/0315.jpg'
   headline= 'We Work <span>Together</span>'
   button_text= 'View Academic Opportunities'
   button_link= ''
