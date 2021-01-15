@@ -29,6 +29,15 @@ python3 -m  http.server 8000
 ```
 The command will output the server URL to visit in your browser, ex. http://localhost:8000.
 
+### Specifying the base URL
+When creating a new site using this template, you will need to specify a base URL in the `.github/workflows/gh-pages.yml` file. To do this correctly;
+1. Discern whether your site is hosted in a subdirectory. For example, `https://uiowa.github.io` is not a subdirectory, where `https://uiowa.github.io/vuejs-site-template/` is.
+2. If it is a subdirectory, go to the `.github/workflows/gh-pages.yml` file and do the following;
+    1. Find the `Main branch preparations` build step and change the `yarn build` command to `yarn build --base=/YOUR/FULL/SUBDIRECTORY/PATH/`.
+    2. Find the `Develop branch preparations` build step and change the `yarn build` command to `yarn build --base=/YOUR/FULL/SUBDIRECTORY/PATH/latest/`.
+3. If it is not a subdirectory, go to the `.github/workflows/gh-pages.yml` file and do the following;
+    1. Find the `Main branch preparations` build step and change the `yarn build` command to `yarn build --base=/`.
+    2. Find the `Develop branch preparations` build step and change the `yarn build` command to `yarn build --base=/latest/`. 
 
 ### Creating a PR
 1. Once your feature branch has been created, you will need to run the following command: `git push origin feature_branch`.
