@@ -1,6 +1,14 @@
 # VueJS Site Template
 Vue 3.0
 
+### Setup node version
+Currently, node version 14.17.0 works best with our viewbooks.
+The .nvmrc file defines this as the version we are using.
+To use this, run:
+```
+nvm use
+```
+
 ### Install dependencies
 First, install Yarn dependencies:
 ```
